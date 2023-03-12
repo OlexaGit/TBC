@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <!-- ****copy**** -->
+    <title>TBC</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <!-- ****copy**** end*-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -22,9 +20,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- ****copy**** -->
-    <!-- <script type="module" src="./index.js"></script> -->
-    <!-- ****copy**** end*-->
   </head>
   <body>
     <header class="link header page-header">
@@ -33,26 +28,26 @@
           <a class="link-logo" href="./index.html"
             >Web<span class="link-logo-color">Studio</span></a
           >
-          <button
-            type="button"
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="32px" height="22px" fill="currentColor">
-              <use href="./images/icon/symbol-defs.svg#icon-menu-hamburger"></use>
-            </svg>
-          </button>
           <ul class="menu-nav">
             <li><a class="menu-link current" href="./index.html">Studio</a></li>
             <li><a class="menu-link" href="./portfolio.html">Portfolio</a></li>
             <li><a class="menu-link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <ul class="header-menu-contact">
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32px" height="22px" fill="currentColor">
+            <use href="./images/icon/symbol-defs.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+        <!-- <ul class="header-menu-contact">
           <li><a class="menu-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="menu-contact" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-        </ul>
+        </ul> -->
       </div>
     </header>
     <main>
@@ -69,24 +64,8 @@
                 src="./images/customer-reviews/customer-foto1.png"
                 alt="photo Emily"
               />
-              <p class="review-text">
-                I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles!
-                In addition, you have beautiful serving, cozy atmosphere and polite staff.
-              </p>
+              <p class="review-text">I love visiting your cafe.</p>
               <p class="review-name">Emily, Los Angeles</p>
-              <!-- <ul class="reviews">
-              <li class="photo-emily">
-                <img src="./images/customer-reviews/customer-foto1.png" alt="emily" />
-              </li>
-              <li class="review-emily">
-                <p>
-                  I love visiting your cafe. You prepare the most delicious ice cream in Los
-                  Angeles! In addition, you have beautiful serving, cozy atmosphere and polite
-                  staff.
-                </p>
-              </li>
-              <li class="review-name"><p>Emily, Los Angeles</p></li>
-            </ul> -->
             </div>
             <div class="swiper-slide">
               <img
@@ -95,8 +74,7 @@
                 alt="photo Bryan"
               />
               <p class="review-text">
-                Every day we come to you with friends after classes in college. We love your ice
-                cream and casual atmosphere!
+                Every day we come to you with friends after classes in college.
               </p>
               <p class="review-name">Bryan, New-York</p>
             </div>
@@ -106,10 +84,7 @@
                 src="./images/customer-reviews/customer-foto3.png"
                 alt="photo Diana"
               />
-              <p class="review-text">
-                Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like
-                the excellent service - always served politely and quickly!
-              </p>
+              <p class="review-text">Ice cream is my passion!</p>
               <p class="review-name">Diana, Chicago</p>
             </div>
             ...
@@ -172,20 +147,6 @@
             </li>
           </ul>
         </div>
-        <form class="form">
-          <div class="form-field social-text">
-            <label for="email">Subscribe</label>
-            <input class="form-input" type="email" name="email" id="email" placeholder="E-mail" />
-          </div>
-          <button class="btn-footer social-text" type="submit">
-            Subscribe
-            <div class="icon-footer">
-              <svg class="email-icon" width="24" height="24">
-                <use href="./images/icon/symbol-defs.svg#icon-Subscribe"></use>
-              </svg>
-            </div>
-          </button>
-        </form>
       </div>
     </footer>
     <!-- mobile-menu -->
