@@ -1,0 +1,223 @@
+:root {
+  --primary-color: #2e2f42;
+  --secondary-color: #434455;
+  --accent-color-logo: #4d5ae5;
+  --accent-color-btn: #188ce8;
+  --background-color: #2e2f42;
+  --text-background-color: #ffffff;
+  --second-logo-color: #2e2f42;
+  --footer-logo-color: #f4f4fd;
+  --text-background-color-footer: #e7e9fc;
+  --background-focus-btn: #404bbf;
+  /* color */
+  --dark-bg-color: #84a178;
+  --text-review: #fcfcfc;
+  --review-name: #131313;
+  /* --swiper-navigation-size: 72px; */
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+  background-color: var(--text-background-color);
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-family: var(--main-font);
+}
+.customer-reviews {
+  background-image: url(../images/background/background-mobile.jpg);
+  background-size: 100%, cover;
+  background-position: top 0 center;
+  padding-top: 324px;
+  border-top: 98px solid var(--dark-bg-color);
+}
+
+.font-family: var(--main-font);
+
+/* MOBILE */
+@media screen and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ICE-CREAM */
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* -------------  ***  ------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* *********************  COPY  ****************** */
+/* *********************  COPY  ****************** */
+/* *********************  COPY  ****************** */
+/* *********************  COPY  ****************** */
+/* *********************  COPY  ****************** */
+.swiper {
+  width: 320px;
+  /* height: 454px; */
+}
+.swiper-slide-active {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--dark-bg-color);
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.photo-emily {
+  margin: auto;
+  width: 85px;
+  height: 85px;
+}
+.review-text {
+  margin: 32px auto;
+  width: 280px;
+  padding: 35px 39px;
+  background-color: var(--dark-bg-color);
+  border-radius: 10px;
+  color: var(--text-review);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+}
+.review-name {
+  margin-bottom: 12px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  /* or 37px */
+
+  text-align: center;
+  color: var(--review-name);
+}
+
+/* MOBILE */
+@media screen and (min-width: 320px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .customer-reviews {
+      background-image: url(../images/background/background-mobile@2x.jpg);
+    }
+  }
+}
+
+/* ICE-CREAM */
+@media screen and (min-width: 480px) {
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .customer-reviews {
+    background-image: url(../images/background/background-tablet.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .customer-reviews {
+      background-image: url(../images/background/background-tablet@2x.jpg);
+    }
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  .customer-reviews {
+    background-image: url(../images/background/background-desktop.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .customer-reviews {
+      background-image: url(../images/background/background-desktop@2x.jpg);
+    }
+  }
+}
+
+/* ****copy**** end** */
+
+/* border-color: #404bbf;
+  background-color: #404bbf;
+  background-image: url(../images/click.svg);
+  background-size: contain;
+  background-origin: border-box;
+} */
+/* .swiper-pagination-bullet {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1.25px solid var(--primary-color);
+  border-radius: 2px;
+} */
