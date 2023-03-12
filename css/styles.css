@@ -63,21 +63,24 @@ ol {
   .container {
     width: 480px;
   }
-}
+}*/
 @media screen and (min-width: 768px) {
-  .container {
+  /* .container {
     width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+  } */
+  .menu-toggle {
+    display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
     padding-left: 16px;
     padding-right: 16px;
   }
-} */
+}  */
 
 /* -------------  ***  ------------------*/
 
@@ -199,4 +202,177 @@ ol {
       background-image: url(../images/background/background-desktop@2x.jpg);
     }
   }
+}
+/*--------------------- modal window (begine)------------ */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(46, 47, 66, 0.4);
+  opacity: 1;
+  overflow-y: scroll;
+  transition: opacity 250ms var(--cubic-bezier);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  transition: transform 250mc var(--cubic-bezier);
+}
+.icon-link {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: #000000;
+  background-color: var(--text-background-color-footer);
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
+}
+.icon-link:hover,
+.icon-link:focus {
+  color: #ffffff;
+  background-color: var(--background-focus-btn);
+}
+.icon-close {
+  fill: currentColor;
+}
+.form-mw {
+  padding: 72px 16px 24px;
+}
+.form-mw p {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+.form-field-mw {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+.form-field-mw:not(:last-child) {
+  margin-bottom: 8px;
+}
+.form-field-mw label {
+  font-size: 12px;
+  line-height: 1.33;
+  margin-bottom: 4px;
+  color: #8e8f99;
+}
+.form-field-mw input {
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: inherit;
+  outline: transparent;
+  transition: border-color 250ms var(--cubic-bezier);
+}
+textarea {
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-left: 16px;
+  outline: transparent;
+  transition: border-color 250ms var(--cubic-bezier);
+}
+.form-field-mw textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(117, 117, 117, 0.5);
+}
+.button-mw {
+  display: inline;
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  margin-bottom: 0px;
+  background-color: var(--accent-color-logo);
+  transition: background-color 250ms var(--cubic-bezier);
+}
+.button-mw:hover,
+.button-mw:focus {
+  background-color: var(--background-focus-btn);
+}
+.name-mw-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  display: inline-block;
+  width: 22px;
+  height: 24px;
+  color: var(--primary-color);
+  transition: color 250ms var(--cubic-bezier);
+}
+.form-field-mw:focus-within > .name-mw-icon {
+  color: var(--accent-color-logo);
+}
+.form-field-mw input:focus {
+  border-color: var(--accent-color-logo);
+}
+.form-field-mw textarea:focus {
+  border-color: var(--accent-color-logo);
+}
+.privacy-policy {
+  margin: 16px 0px 24px;
+  color: #8e8f99;
+}
+.privacy-policy label {
+  color: #757575;
+  font-size: 12px;
+  line-height: 1.33px;
+}
+.privacy-policy-text {
+  color: var(--accent-color-logo);
+}
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.label {
+  display: flex;
+  align-items: center;
+}
+.label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1.25px solid var(--primary-color);
+  border-radius: 2px;
+}
+.checkbox:checked + .label::before {
+  border-color: #404bbf;
+  background-color: #404bbf;
+  background-image: url(../images/icon/SVG/click.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+/*--------------------- burger------------ */
+@media screen (max) {
+}
+.menu-toggle {
+  display: none;
 }
