@@ -12,9 +12,15 @@
   /* --footer-logo-color: #f4f4fd; */
   /* --background-focus-btn: #404bbf; */rgba(15, 11, 51, 0.7)
   --font-playfair-display: 'Playfair Display';
+  /* 700 */
   --font-dm-sans: 'DM Sans';
+  /* 400, 700, */
   --font-dm-mono: 'DM Mono';
+  /* 500 */
   --font-nunito-sans: 'Nunito Sans';
+  /* font-family: 'Poppins';
+font-style: normal;
+font-weight: 700; */
 }
 
 body {
