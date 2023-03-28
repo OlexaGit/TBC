@@ -32,10 +32,10 @@
             <span class="link-logo-color">TBESTCHANCE</span></a
           >
           <ul class="menu-nav">
-            <li><a class="menu-link current" href="./index.html">HOME</a></li>
-            <li><a class="menu-link" href="./portfolio.html">SERVICES</a></li>
-            <li><a class="menu-link" href="">ABOUT US</a></li>
-            <li><a class="menu-link" href="">CONTACT US</a></li>
+            <li><a class="menu-link current" href="#home-primary">HOME</a></li>
+            <li><a class="menu-link" href="#services-id">SERVICES</a></li>
+            <li><a class="menu-link" href="#about-us-id">ABOUT US</a></li>
+            <li><a class="menu-link" href="#footer-id">CONTACT US</a></li>
           </ul>
         </nav>
         <button class="modal-btn" type="button" data-modal-open>Ask for help</button>
@@ -112,24 +112,26 @@
       </div>
     </header>
     <main>
-      <section class="primary section">
-        <div class="container">
+      <section class="primary section" id="home-primary">
+        <div class="primary-container container">
           <h1 class="primary-title">
             We are <span class="primary-always">always</span> there for all your needs
           </h1>
-          <p class="primary-text">
-            We are a charity company which helps Ukrainians in the United States of America by
-            findings jobs, properties, and other stuff
-          </p>
-          <a class="primary-contact" href=""
-            >/ CONTACT US
-            <svg class="arrow" width="44" height="4">
-              <use href="./images/icon/symbol-defs.svg#icon-Arrow"></use>
-            </svg>
-          </a>
+          <div class="primary-block">
+            <p class="primary-text">
+              We are a charity company which helps Ukrainians in the United States of America by
+              findings jobs, properties, and other stuff
+            </p>
+            <a class="primary-contact" href=""
+              >/ CONTACT US
+              <svg class="arrow" width="62" height="40">
+                <use href="./images/icon/symbol-defs.svg#icon-Arrow"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
-      <section class="services section">
+      <section class="services section" id="services-id">
         <div class="services-photo">
           <picture class="">
             <source
@@ -153,11 +155,13 @@
         <div class="services-container container">
           <h2 class="visually-hidden">SERVICES</h2>
           <p class="services-subtitle">SERVICES</p>
-          <h3 class="services-title">Where our services add value to your needs</h3>
-          <p class="services-text">
-            Generous people & individuals identify key solutions for helping others. You can always
-            fill out the form and we will respond you as fast as we can.
-          </p>
+          <div class="services-block-title">
+            <h3 class="services-title">Where our services add value to your needs</h3>
+            <p class="services-text">
+              Generous people & individuals identify key solutions for helping others. You can
+              always fill out the form and we will respond you as fast as we can.
+            </p>
+          </div>
           <ul class="services-block">
             <li>
               <img
@@ -202,47 +206,49 @@
           </ul>
         </div>
       </section>
-      <section class="about-us section">
+      <section class="about-us section" id="about-us-id">
         <div class="container">
           <h2 class="visually-hidden">ABOUT US</h2>
-          <div class="about-us-block">
-            <p class="about-us-subtitle">ABOUT US</p>
-            <h4 class="about-us-title">
-              If you are not sure about something, you can always ask us and we would do as much as
-              we can.
-            </h4>
-            <p class="about-us-text">
-              We know how difficult it is in a new country when everything around is so foreign and
-              unfamiliar. When you don't know who to turn to, who you can count on and what to
-              expect. When you become helpless and scared of the unknown, but you are the head of
-              the family and everyone counts on you. Our team was created precisely to help in such
-              a situations. To advice or help, to guide the way to adapt in the foreign country, to
-              protect against making wrong decisions and choices. We are happy to be of service to
-              you.
-            </p>
-            <button class="modal-btn about-us-btn" type="button" data-modal-open>
-              Ask for help
-            </button>
-          </div>
-          <div class="about-us-photo">
-            <picture>
-              <source
-                srcset="/images/about-us.jpg 1x, /images/about-us@2x.jpg 2x"
-                media="(max-width: 767px)"
-                type="image/jpeg"
-              />
-              <source
-                srcset="/images/about-us.jpg 1x, /images/about-us@2x.jpg 2x"
-                media="(max-width: 1199px)"
-                type="image/jpeg"
-              />
-              <source
-                srcset="/images/about-us.jpg 1x, /images/about-us@2x.jpg 2x"
-                media="(min-width: 1200px)"
-                type="image/jpeg"
-              />
-              <img class="photo" src="/images/about-us.jpg" alt="about us photo" />
-            </picture>
+          <div class="about-us-block-title">
+            <div class="about-us-block">
+              <p class="about-us-subtitle">ABOUT US</p>
+              <h4 class="about-us-title">
+                If you are not sure about something, you can always ask us and we would do as much
+                as we can.
+              </h4>
+              <p class="about-us-text">
+                We know how difficult it is in a new country when everything around is so foreign
+                and unfamiliar. When you don't know who to turn to, who you can count on and what to
+                expect. When you become helpless and scared of the unknown, but you are the head of
+                the family and everyone counts on you. Our team was created precisely to help in
+                such a situations. To advice or help, to guide the way to adapt in the foreign
+                country, to protect against making wrong decisions and choices. We are happy to be
+                of service to you.
+              </p>
+              <button class="modal-btn about-us-btn" type="button" data-modal-open>
+                Ask for help
+              </button>
+            </div>
+            <div class="about-us-photo">
+              <picture>
+                <source
+                  srcset="/images/about-us.jpg 1x, /images/about-us@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="/images/about-us.jpg 1x, /images/about-us@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="/images/about-us.jpg 1x, /images/about-us@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img class="photo" src="/images/about-us.jpg" alt="about us photo" />
+              </picture>
+            </div>
           </div>
           <!-- Slider main container -->
           <div class="swiper">
@@ -312,7 +318,7 @@
           </p>
           <div class="examples">
             <h3 class="examples-title">(Examples)</h3>
-            <ul>
+            <ul class="examples-client">
               <li>
                 <img
                   class="photo-client"
@@ -373,7 +379,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer-id">
       <div class="footer-container container">
         <nav class="nav-logo">
           <a class="link-logo" href="./index.html"

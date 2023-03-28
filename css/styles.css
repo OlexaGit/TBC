@@ -135,12 +135,15 @@ ol {
 }
 .primary-contact {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: flex-end;
   text-decoration: none;
   font-weight: 700;
   font-size: 10px;
   margin-top: 40px;
+  line-height: 2.5;
+  letter-spacing: 0.5em;
+  text-decoration-line: underline;
   color: var(--secondary-color);
 }
 .arrow {
@@ -276,6 +279,7 @@ ol {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.6;
+  text-align: center;
   color: var(--background-color);
   margin-bottom: 40px;
 }
@@ -287,27 +291,25 @@ ol {
   color: var(--secondary-color-text);
 }
 .examples-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.3;
-  /* display: flex;
-  align-items: center;
-  text-align: center; */
+  text-align: center;
   letter-spacing: 0.3px;
-  color: var(--text-background-color);
+  color: var(--background-color);
 }
 .our-teams-examples-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.3;
   letter-spacing: 0.02em;
-  color: var(--secondary-color-text);
+  color: var(--background-color);
 }
 .our-teams-examples-text {
-  font-size: 16px;
   line-height: 1.3;
   letter-spacing: 0.02em;
-  color: var(--secondary-color-text);
+  color: var(--background-color);
 }
 /* =FOOTER= */
 .footer {
@@ -355,6 +357,18 @@ ol {
   .container-header {
     width: 480px;
   }
+  .link-logo-color {
+    font-size: 16px;
+  }
+  .modal-btn {
+    margin-left: 140px;
+    width: 88px;
+    height: 38px;
+    font-size: 10px;
+  }
+  .services-photo {
+    width: 480px;
+  }
 }
 @media screen and (max-width: 767px) {
   .menu-nav,
@@ -365,17 +379,124 @@ ol {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+  }
+  .container-header {
+    width: 768px;
+  }
+  .nav-logo {
+    display: flex;
+  }
+  .link-logo-color {
+    font-size: 20px;
+  }
+  .menu-nav {
+    display: flex;
+    gap: 10px;
+    margin-left: 50px;
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 1.5;
+    align-items: center;
+  }
+  .menu-link {
+    text-decoration: none;
+    color: var(--text-background-color);
   }
   .menu-toggle {
     display: none;
   }
-  .services-photo {
-    width: 100%;
+  .primary-container {
+    display: flex;
+    align-items: baseline;
+    gap: 40px;
+    padding: 0;
   }
+  .primary-title {
+    width: 50%;
+    font-size: 40px;
+  }
+  .primary-block {
+    width: 48%;
+  }
+
+  .primary-text {
+    margin-top: 0;
+    font-size: 17px;
+  }
+  .primary-contact {
+    justify-content: flex-start;
+    font-size: 10px;
+    margin-top: 35px;
+  }
+  .services-photo {
+    width: 768px;
+  }
+  .services-subtitle {
+    font-size: 14px;
+  }
+  .services-block-title {
+    display: flex;
+    gap: 40px;
+  }
+  .services-title {
+    width: 50%;
+    font-size: 26px;
+  }
+  .services-text {
+    width: 50%;
+  }
+  .services-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  .services-block li {
+    width: 240px;
+  }
+  .modal-btn {
+    width: 148px;
+    height: 48px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .about-us-block-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-us-block {
+    width: 40%;
+  }
+  .about-us-photo {
+    width: 50%;
+  }
+  .about-us-subtitle {
+    font-size: 14px;
+  }
+  .about-us-text {
+    font-size: 15px;
+  }
+  .about-us-btn {
+    margin-left: 0;
+  }
+  .our-teams-title {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  .examples-client {
+    display: flex;
+    justify-content: space-between;
+  }
+  .examples-client li {
+    width: 150px;
+    text-align: center;
+  }
+  /* .our-teams-examples-title {
+    font-size: 20px;
+    font-weight: 700px;
+    color: var(--background-color);
+  } */
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   /* .container {
     width: 1200px;
     padding-left: 16px;
@@ -383,6 +504,31 @@ ol {
   } */
   .container-header {
     width: 1280px;
+  }
+  .menu-nav {
+    font-size: 14px;
+  }
+  .primary-contact {
+    font-size: 12px;
+  }
+  .services-subtitle {
+    font-size: 16px;
+  }
+  .services-title {
+    font-size: 32px;
+  }
+  .services-block-title {
+    gap: 80px;
+  }
+  .services-block li {
+    width: 384px;
+  }
+  .about-us-subtitle {
+    font-size: 16px;
+  }
+  .examples-client li {
+    width: 202px;
+    text-align: center;
   }
 }
 
