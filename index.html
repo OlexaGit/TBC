@@ -124,7 +124,7 @@
                   ></textarea>
                 </div>
               </div>
-              <button type="submit" class="button-mw social-text">submit</button>
+              <button type="submit" class="button-mw">submit</button>
             </form>
           </div>
         </div>
@@ -258,6 +258,102 @@
               <button class="modal-btn about-us-btn" type="button" data-modal-open>
                 Ask for help
               </button>
+              <div class="backdrop-about-us is-hidden" data-modal>
+                <div class="modal-about-us">
+                  <button class="icon-link-modal" data-modal-close>
+                    <svg class="icon-close" width="20" height="20">
+                      <use href="./images/icon/symbol-defs.svg#icon-close-black-18"></use>
+                    </svg>
+                  </button>
+                  <form class="form-mw">
+                    <p class="form-title">Form</p>
+                    <div class="form-list">
+                      <div class="form-field-mw">
+                        <label for="name-mw">First Name</label
+                        ><input
+                          type="text"
+                          name="name"
+                          id="name-mw"
+                          placeholder="First name..."
+                          autofocus
+                        />
+                      </div>
+                      <div class="form-field-mw">
+                        <label for="last-name-mw">Last Name</label
+                        ><input
+                          type="text"
+                          name="last-name-mw"
+                          id="last-name-mw"
+                          placeholder="Last name..."
+                          autofocus
+                        />
+                      </div>
+                      <div class="form-field-mw">
+                        <label for="tel-mw"
+                          >Phone <span class="tel-mw-note">(only numbers)</span></label
+                        ><input
+                          type="tel"
+                          name="tel-mw"
+                          id="tel-mw"
+                          placeholder="0123456789"
+                          autofocus
+                        />
+                      </div>
+                      <div class="form-field-mw">
+                        <label for="email-mw">Email</label
+                        ><input
+                          type="email"
+                          name="email-mw"
+                          id="email-mw"
+                          placeholder="E-mail..."
+                          autofocus
+                        />
+                      </div>
+                      <div class="form-field-mw">
+                        <p class="english-level">Gender</p>
+                        <div class="radio-english">
+                          <label>
+                            <input type="radio" name="gender" value="male" checked />
+                            Male
+                          </label>
+                          <label>
+                            <input type="radio" name="gender" value="female" />
+                            Female
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-field-mw">
+                        <p class="english-level">English</p>
+                        <div class="radio-english">
+                          <label>
+                            <input type="radio" name="english-level" value="a1-a2" checked />
+                            A1-A2
+                          </label>
+                          <label>
+                            <input type="radio" name="english-level" value="b1-b2" />
+                            B1-B2
+                          </label>
+                          <label>
+                            <input type="radio" name="english-level" value="c1-c2" />
+                            C1-C2
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-field-mw comment-additional">
+                        <label for="Comment-mw">Additional info</label
+                        ><textarea
+                          name="Comment-mw"
+                          id="Comment-mw"
+                          rows="8"
+                          placeholder="Education level, specialty, driver license(more info we get - easier for you!) "
+                          autofocus
+                        ></textarea>
+                      </div>
+                    </div>
+                    <button type="submit" class="button-mw" data-modal-close>submit</button>
+                  </form>
+                </div>
+              </div>
             </div>
             <div class="about-us-photo">
               <picture>
