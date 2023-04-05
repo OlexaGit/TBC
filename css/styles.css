@@ -110,6 +110,7 @@ ol {
 }
 .menu-toggle {
   background-color: var(--background-color);
+  fill: var(--secondary-color);
 }
 .mobile-menu {
   padding-top: 100px;
