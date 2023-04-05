@@ -593,11 +593,17 @@ ol {
   .modal {
     width: 760px;
   }
-  /* .our-teams-examples-title {
-    font-size: 20px;
-    font-weight: 700px;
-    color: var(--background-color);
-  } */
+  .form-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 100px;
+  }
+  .form-field-mw {
+    width: 300px;
+  }
+  .comment-additional {
+    width: 700px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .container {
@@ -794,13 +800,14 @@ ol {
   color: var(--background-color);
 }
 .radio-english {
+  height: 40px;
+  border-radius: 4px;
   background-color: var(--background-color);
 }
 .radio-english label {
   font-weight: 400;
   font-size: 14px;
   padding: 8px 2px 8px 14px;
-  border-radius: 4px;
   color: var(--first-color-text);
 }
 .radio-english :not(:last-child) {
@@ -841,11 +848,9 @@ textarea {
   width: 148px;
   height: 48px;
   font-size: 18px;
-
   padding: 6px 12px;
   font-family: var(--font-poppins);
   font-weight: 700;
-
   border-radius: 15px;
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -862,16 +867,3 @@ textarea {
 .form-field-mw textarea:focus {
   border-color: var(--secondary-color);
 }
-/* .checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-.checkbox:checked + .label::before {
-  border-color: #404bbf;
-  background-color: #404bbf;
-  background-image: url(../images/icon/SVG/click.svg);
-  background-size: contain;
-  background-origin: border-box;
-} */
